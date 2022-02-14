@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background : url("images/bk.jfif");
+    background-size: 130%;
+    background-position: -300px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    font-size: large;
+    
+    
+}
+.container{
+    background-color:rgba(0, 0, 0, 0.5);;
+   border-radius: 10px;
+   -webkit-border-radius:10px;
+   overflow: hidden;
+   width: calc(100vw -65vw);
+   max-width: 100%;
+}
+.header{
+    padding: 10px 0;
+    background: rgba(9, 156, 132, 0.973);
+}
+.header h2{
+    color:aliceblue;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  
+}
+.form{
+    padding: 80px;
+}
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 5px 0;
+
+}
+.form-control input :focus{
+    outline: 0;
+    border-color: #777;
+
+
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color:red;
+}
+.form-control i{
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    visibility: hidden;
+}
+.form-control small{
+    color: red;
+    position :absolute;
+    bottom:0;
+    left:0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.sucess i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+    font-family: "Font Awesome 5 Free";
+}
+.form-control.error i.fa-exclamation-circle{
+    color:red;
+    visibility:visible;
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a";
+}
+
+
+.form .btn{
+    border-radius: 4px;
+    border:none;
+    outline:none;
+    display:block;
+    color: wheat;
+    position: centre;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 50%;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(9, 156, 132, 0.973);
+}
+.form .btn:hover{
+    background-color: rgb(29, 75, 69);
+}
